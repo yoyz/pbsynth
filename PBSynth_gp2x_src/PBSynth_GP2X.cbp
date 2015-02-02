@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PBSynth" />
+		<Option pch_mode="2" />
+		<Option compiler="armelfgcc" />
+		<Build>
+			<Target title="gp2x">
+				<Option output="bin\Release\PBSynth.gpe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-O2" />
+					<Add option="-DGP2X" />
+					<Add directory="source\y3d" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static -lz -lSDL -lgcc -lm -lc -lexpat -lpthread" />
+				</Linker>
+			</Target>
+			<Target title=" ">
+				<Option output="bin\Release\PBSynth" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-O2" />
+					<Add directory="source\y3d" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="mingw32" />
+					<Add library="sdlmain" />
+					<Add library="sdl" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O2" />
+			<Add option="-w" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+		</Linker>
+		<Unit filename="archdep.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="coeff.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="coeff.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="echo.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="echo.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="env.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="env.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="envtab.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="envtab.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="filter.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="filter.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="fixed.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="gui.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="gui.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="knobpal.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="knobpal.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="knobraw.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="knobraw.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lcdpal.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lcdpal.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lcdraw.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lcdraw.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lfo.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lfotab.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="lfotab.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="mytypes.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="osc.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="osc.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="osctab.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="osctab.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="sdl.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthengine.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthengine.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthgui.cpp">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthgui.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthpal.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthpal.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthraw.c">
+			<Option compilerVar="CC" />
+			<Option target="gp2x" />
+		</Unit>
+		<Unit filename="synthraw.h">
+			<Option target="gp2x" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
